@@ -48,11 +48,11 @@ with header:
 def callingdata():
     st.header("Analyising Patterns Using CSK IPL Data ")
     st.text("Here we will see the...")
-    match = pd.read_csv("~/Project/data/Matches.csv") 
+    match = pd.read_csv("data/Matches.csv") 
     return(st.write(match.head(10)))
     
 with dataset:
-    match = pd.read_csv("~/Project/data/Matches.csv")
+    match = pd.read_csv("data/Matches.csv")
     if st.sidebar.checkbox("Dataset"):
         callingdata()
 
